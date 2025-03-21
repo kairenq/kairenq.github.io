@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальный сайт</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0A0A0A, #141414);
+            margin-top: 80px;
+            color: #C0C0C0;
+            font-family: 'Raleway', sans-serif;
+        }
+       
+        .navbar {
+            background-color: rgba(5, 5, 5, 0.95);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(6px);
+        }
+        .navbar-brand, .nav-link {
+            color: #D0D0D0;
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #FFFFFF;
+        }
+        .footer {
+            background-color: #0F0F1D;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .cover-container {
+            position: relative;
+            width: 260px;
+            height: 260px;
+            margin-left: 0px;
+        }
+        .container.section {
+            justify-content: center;
+            gap: 50px;
+        }
+        .cover {
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            left: 0;
+        }
+        h1, h2 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color:  #F0F0F0;
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1);
+        }
+        .rock-plate, .emorap-plate, .rap-plate, .pop-plate {
+            filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.1));
+            width: 75%;
+            top: 15%;
+        }
+        .rock-plate, .emorap-plate {
+            position: absolute;
+            z-index: 1;
+            width: 85%;
+            left: 10%;
+            top: 7.5%;
+            transform: translateX(30%);
+            transition: transform 1.5s ease-in-out;
+            
+        }
+        .footer {
+            background-color: rgba(5, 5, 5, 0.95);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+        }
+        .rap-plate, .pop-plate {
+            position: absolute;
+            z-index: 1;
+            width: 85%;
+            right: 10%;
+            top: 7.5%;
+            transform: translateX(-30%);
+            transition: transform 1.5s ease-in-out;
+        }
+
+        @keyframes spin-right {
+            from { transform: translateX(55%) scale(1.1) rotate(0deg); }
+            to { transform: translateX(55%) scale(1.1) rotate(360deg); }
+        }
+
+        @keyframes spin-left {
+            from { transform: translateX(-55%) scale(1.1) rotate(0deg); }
+            to { transform: translateX(-55%) scale(1.1) rotate(-360deg); }
+        }
+        .text-container {
+            max-width: 50%; /* Уменьшает ширину блока с текстом */
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .social-icons a img:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" data-aos="fade-down">
+        <div class="container">
+            <a class="navbar-brand" href="#">Логотип</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="rock_genre.html">Жанр 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rap_genre.html">Жанр 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="emorap_genre.html">Жанр 3 </a></li>
+                    <li class="nav-item"><a class="nav-link" href="pop_genre.html">Жанр 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="container text-center my-5" data-aos="fade-up">
+        <h1>Привет! Я ебал твою телку уу!</h1>
+        <p>Добро пожаловать на мой сайт, посвященный моей любимой музыке!</p>
+    </section>
+    
+    <section class="container my-5 d-flex align-items-center justify-content-between">
+        <div class="cover-container" data-aos="fade-right">
+            <img src="rock_cover.png" class="cover img-fluid" alt="Обложка">
+            <img src="rock_plate.png" class="rock-plate img-fluid" alt="Пластинка">
+        </div>
+        <div class="text-container" data-aos="fade-left">
+            <h2>РОК БЛЯЯЯ КЛАДБИЩА ЧЕРЕПА СКР СКР СКР</h2>
+            <p>пупупу</p>
+        </div>
+    </section>
+    
+    <section class="container my-5 d-flex align-items-center justify-content-between">
+        <div class="text-container" data-aos="fade-right">
+            <h2>нига нига донт шут ми ам гона фак ёр ээкс</h2>
+            <p>Лу у у у</p>
+        </div>
+        <div class="cover-container" data-aos="fade-left">
+            <img src="rap_cover.png" class="cover img-fluid" alt="Обложка">
+            <img src="rap_plate.png" class="rap-plate img-fluid" alt="Пластинка">
+        </div>
+    </section>
+    
+    <section class="container my-5 d-flex align-items-center justify-content-between">
+        <div class="cover-container" data-aos="fade-right">
+            <img src="emorap_cover.png" class="cover img-fluid" alt="Обложка">
+            <img src="emorap_plate.png" class="emorap-plate img-fluid" alt="Пластинка">
+        </div>
+        <div class="text-container" data-aos="fade-left">
+            <h2>мни так плоха хуева адинока</h2>
+            <p>ананасовый сироп оп оп оп оп </p>
+        </div>
+    </section>
+    
+    <section class="container my-5 d-flex align-items-center justify-content-between">
+        <div class="text-container" data-aos="fade-right">
+            <h2>били айлиш го встр я знаю ты меня лю</h2>
+            <p>шеее не вмерла ууукраина</p>
+        </div>
+        <div class="cover-container" data-aos="fade-left">
+            <img src="pop_cover.png" class="cover img-fluid" alt="Обложка">
+            <img src="pop_plate.png" class="pop-plate img-fluid" alt="Пластинка">
+        </div>
+    </section>
+    
+    <footer class="footer" >
+        <p>© 2025 Мой музыкальный сайт</p>
+        <div class="social-icons">
+            <a href="https://github.com/kairenq" target="_blank"><img src="github.png" alt="GitHub"></a>
+            <a href="https://t.me/kairenqq" target="_blank"><img src="telegram.png" alt="Telegram"></a>
+            <a href="https://vk.com/kairenq" target="_blank"><img src="vk.png" alt="VK"></a>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function animatePlate(selector, direction) {
+            const plate = document.querySelector(selector);
+            plate.addEventListener('mouseenter', function() {
+                let translateValue = direction === 'right' ? 'translateX(55%)' : 'translateX(-55%)';
+                let animationName = direction === 'right' ? 'spin-right' : 'spin-left';
+
+                plate.style.transform = `${translateValue} scale(1.1)`;
+                setTimeout(() => {
+                    plate.style.animation = `${animationName} 8s linear infinite`;
+                }, 1500);
+            });
+        }
+
+        // Применяем анимацию для пластинок
+        animatePlate('.rock-plate', 'right');
+        animatePlate('.emorap-plate', 'right');
+        animatePlate('.rap-plate', 'left');
+        animatePlate('.pop-plate', 'left');
+
+                
+    </script>
+</body>
+</html>
