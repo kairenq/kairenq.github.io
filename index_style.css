@@ -1,0 +1,221 @@
+body {
+    background: linear-gradient(135deg, #0A0A0A, #161616);
+    background-size: 400% 400%;
+    animation: gradientShift 10s infinite linear;
+    margin-top: 80px;
+    color: #C0C0C0;
+    font-family: 'Raleway', sans-serif;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.navbar {
+    background-color: rgba(5, 5, 5, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+}
+.navbar-brand, .nav-link {
+    color: #D0D0D0;
+    transition: color 0.3s ease-in-out;
+}
+.navbar-brand img{
+    width: 10%;
+}
+.navbar-brand:hover, .nav-link:hover {
+    color: #FFFFFF;
+}
+.cover-container {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    margin-left: 0px;
+}
+.container.section {
+    justify-content: center;
+    gap: 50px;
+}
+.cover {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+}
+h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:  #F0F0F0;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1);
+}
+.rock-plate, .emorap-plate, .rap-plate, .pop-plate {
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.1));
+    width: 75%;
+    top: 15%;
+}
+.rock-plate, .emorap-plate {
+    position: absolute;
+    z-index: 1;
+    width: 85%;
+    left: 10%;
+    top: 7.5%;
+    transform: translateX(30%);
+    transition: transform 1.5s ease-in-out;
+    
+}
+.footer {
+    background-color: rgba(5, 5, 5, 0.95);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+}
+.rap-plate, .pop-plate {
+    position: absolute;
+    z-index: 1;
+    width: 85%;
+    right: 10%;
+    top: 7.5%;
+    transform: translateX(-30%);
+    transition: transform 1.5s ease-in-out;
+}
+
+@keyframes spin-right {
+    from { transform: translateX(55%) scale(1.1) rotate(0deg); }
+    to { transform: translateX(55%) scale(1.1) rotate(360deg); }
+}
+
+@keyframes spin-left {
+    from { transform: translateX(-55%) scale(1.1) rotate(0deg); }
+    to { transform: translateX(-55%) scale(1.1) rotate(-360deg); }
+}
+.text-container {
+    max-width: 50%; /* Уменьшает ширину блока с текстом */
+    text-align:justify;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-icons a img:hover {
+    opacity: 1;
+}
+@media (max-width: 768px) {
+    .cover-container {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+    }
+    
+    .cover {
+        width: 100%;
+        height: auto;
+    }
+
+    .rock-plate, .emorap-plate {
+        width: 80%;
+        top: 5%;
+        transform: translateX(50px);
+        margin-top: 10px;
+    }
+
+    .rap-plate, .pop-plate {
+        width: 80%;
+        top: 5%;
+        transform: translateX(-50px);
+        margin-top: 10px;
+    }
+
+    .text-container {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 15px;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.popup-form {
+position: fixed;
+bottom: 20px;
+right: -300px; /* Форма скрыта */
+width: 280px;
+padding: 20px;
+background: rgba(20, 20, 20, 0.95);
+color: white;
+border-radius: 12px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+transition: right 0.5s ease-in-out;
+font-family: Arial, sans-serif;
+}
+
+.popup-form.visible {
+    right: 20px; /* Показываем форму */
+}
+
+.popup-form h3 {
+    margin: 0 0 15px;
+    text-align: center;
+}
+
+.popup-form input, .popup-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.popup-form textarea {
+    height: 80px;
+    resize: none;
+}
+
+.popup-form button {
+    width: 100%;
+    padding: 10px;
+    background: crimson;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.popup-form button:hover {
+    background: darkred;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.close-btn:hover {
+    color: crimson;
+}

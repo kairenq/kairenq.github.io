@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="index_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" data-aos="fade-down">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="rock_genre.html">Rock/Metal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rap_genre.html">Rap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="emorap_genre.html">Emo Rap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pop_genre.html">Pop</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="container text-center my-5" data-aos="fade-up">
+        <h1>Привет! Это мой сайт про музыку</h1>
+        <p>Здесь я расскажу про 4 своих любимых жанра в музыке, об исполнительнях в этих жанрах и даже дам возможность послушать их лучшие треки</p>
+    </section>
+    
+    <section class="container my-5 d-flex align-items-center justify-content-between">
+        <div class="cover-container" data-aos="fade-right">
+            <img src="img/genre_cover/rock_cover.png" class="cover img-fluid" alt="Обложка">
+            <img src="img/plate/rock_plate.png" class="rock-plate img-fluid" alt="Пластинка">
+        </div>
+        <div class="text-container" data-aos="fade-left">
+            <h2>Rock/Metal</h2>
+            <p>Я решил занести эти два очень похожих жанра в одну категорию, так как зачастую сложно отличить один от другого. На этот счёт даже постоянно идут споры среди слушателей тех или иных исполнителей. С этого началось формирование моего музыкального вкуса, чему поспособствовал мой старший брат. До сих пор в моём плейлисте есть очень много треков, относящихся к року или металлу.</p>
+        </div>
+    </section>
+    
+    <section class="container my-5 d-flex align-items-center justify-content-between">
+        <div class="text-container" data-aos="fade-right">
+            <h2>Rap</h2>
+            <p>Рэп можно назвать не только музыкальным жанром, но и целой культурой. Он делится на множество поджанров, которые сильно отличаются друг от друга. Один из таких я даже выделил отдельно. Спектр эмоций, которые может передавать рэп, огромен: исполнители не боятся говорить о реальных проблемах и личных переживаниях. Тексты в рэпе — это не просто слова, а слова со смыслом, которые недостаточно просто зачитать.</p>
+        </div>
+        <div class="cover-container" data-aos="fade-left">
+            <img src="img/genre_cover/rap_cover.png" class="cover img-fluid" alt="Обложка" href="rap_genre.html">
+            <img src="img/plate/rap_plate.png" class="rap-plate img-fluid" alt="Пластинка">
+        </div>
+    </section>
+    
+    <section class="container my-5 d-flex align-items-center justify-content-between">
+        <div class="cover-container" data-aos="fade-right">
+            <img src="img/genre_cover/emorap_cover.png" class="cover img-fluid" alt="Обложка" href="emorap_genre.html">
+            <img src="img/plate/emorap_plate.png" class="emorap-plate img-fluid" alt="Пластинка">
+        </div>
+        <div class="text-container" data-aos="fade-left">
+            <h2>Emo Rap</h2>
+            <p>Эмо-рэп — это жанр, который объединил меланхоличный настрой эмо-музыки и ритмичную подачу хип-хопа. Он вызывает сильные эмоции у слушателей. Для одних эмо-рэп — это искреннее и глубокое искусство, способ выразить душевную боль и внутренние переживания. Для других — это мрачное и депрессивное направление, где музыка строится больше на эмоциях, чем на техничности. Не все тексты в эмо-рэпе мне близки, однако их положение спасает уникальное звучание треков.</p>
+        </div>
+    </section>
+    
+    <section class="container my-5 d-flex align-items-center justify-content-between">
+        <div class="text-container" data-aos="fade-right">
+            <h2>Pop</h2>
+            <p>Поп это самый популярный и универсальный жанр, который охватывает множество стилей и направлений. Они созданы для широкой аудитории, легко запоминаются. Поп впитывает элементы многих жанров, создавая новые течения (поп-рок, синти-поп).</p>
+        </div>
+        <div class="cover-container" data-aos="fade-left">
+            <img src="img/genre_cover/pop_cover.png" class="cover img-fluid" alt="Обложка" href="pop_genre.html">
+            <img src="img/plate/pop_plate.png" class="pop-plate img-fluid" alt="Пластинка">
+        </div>
+    </section>
+
+    <div id="popupForm" class="popup-form">
+        <form>
+            <span id="closePopup" class="close-btn">&times;</span>
+            <h3>Свяжитесь с нами</h3>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш email" required>
+            <textarea placeholder="Ваше сообщение"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    
+    <footer class="footer" >
+        <p>© 2025 Мой музыкальный сайт</p>
+        <div class="social-icons">
+            <a href="https://github.com/kairenq" target="_blank"><img src="img/icons/github.png" alt="GitHub"></a>
+            <a href="https://t.me/kairenqq" target="_blank"><img src="img/icons/telegram.png" alt="Telegram"></a>
+            <a href="https://vk.com/kairenq" target="_blank"><img src="img/icons/vk.png" alt="VK"></a>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const popup = document.getElementById('popupForm');
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                popup.classList.add('visible');
+            }
+        });
+
+        document.getElementById('closePopup').addEventListener('click', function() {
+        document.getElementById('popupForm').classList.remove('visible');
+        });
+        AOS.init();
+
+        function animatePlate(selector, direction) {
+            const plate = document.querySelector(selector);
+            plate.addEventListener('mouseenter', function() {
+                let translateValue = direction === 'right' ? 'translateX(55%)' : 'translateX(-55%)';
+                let animationName = direction === 'right' ? 'spin-right' : 'spin-left';
+
+                plate.style.transform = `${translateValue} scale(1.1)`;
+                setTimeout(() => {
+                    plate.style.animation = `${animationName} 8s linear infinite`;
+                }, 1500);
+            });
+        }
+
+        
+
+        // Применяем анимацию для пластинок
+        animatePlate('.rock-plate', 'right');
+        animatePlate('.emorap-plate', 'right');
+        animatePlate('.rap-plate', 'left');
+        animatePlate('.pop-plate', 'left');
+
+                
+    </script>
+</body>
+</html>
