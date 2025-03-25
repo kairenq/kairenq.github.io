@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rop Music</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <link href="genre.css" rel="stylesheet" type="text/css" />
+    <style>
+        .artist-section.red {
+            background: linear-gradient(135deg, rgba(10,10,10, 0.4), rgba(10, 10, 10, 0.4)), url('img/band/billieeilish.png') left center no-repeat;
+            background-size: auto 100%;
+            background-position: left 5% center;
+        }
+        .artist-section.green {
+            background: linear-gradient(135deg, rgba(22, 22, 22, 0.4), rgba(22, 22, 22, 0.4)), url('img/band/postmalone.png') left center no-repeat;
+            background-size: auto 100%;
+            background-position: left 90% center;
+        }
+        .artist-section.blue {
+            background: linear-gradient(135deg,rgba(10,10,10, 0.4), rgba(10, 10, 10, 0.4)), url('img/band/glaive.png') left center no-repeat;
+            background-size: auto 100%;
+            background-position: left 5% center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rock_genre.html">Rock/Metal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Rap_genre.html">Rap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="emorap_genre.html">Emo Rap</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Секция 1: Billie Eilish -->
+    <section class="artist-section red" data-aos="fade-up">
+        <div class="artist-info" data-aos="fade-right" data-aos-duration="1500">
+            <h2>Billie Eilish</h2>
+            <p>Billie Eilish — американская певица, автор песен и музыкант, ставшая одной из самых ярких звёзд современной поп-музыки. Родилась в 2001 году в Лос-Анджелесе, Billie Eilish начала свою карьеру в 2015 году, выпуская музыку на SoundCloud. Её уникальный стиль, сочетающий элементы поп-музыки, электроники и альтернативы, быстро привлёк внимание слушателей.</p>
+            <p>Billie Eilish стала известна благодаря таким трекам, как "Ocean Eyes", "Bad Guy" и "Therefore I Am". Её музыка часто затрагивает темы психического здоровья, одиночества и саморефлексии, что делает её глубоко эмоциональной и близкой для многих поклонников. В 2020 году Billie Eilish получила пять премий Грэмми, включая награды за "Лучший новый исполнитель" и "Альбом года" за "When We All Fall Asleep, Where Do We Go?".</p>
+            <!-- Кнопка для открытия модального окна -->
+            <button type="button" class="btn btn-primary btn123" data-bs-toggle="modal" data-bs-target="#lilTeccaModal">
+                Открыть плеер
+            </button>
+        </div>
+    </section>
+
+    <!-- Модальное окно для Billie Eilish -->
+    <div class="modal fade" id="lilTeccaModal" tabindex="-1" aria-labelledby="lilTeccaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lilTeccaModalLabel">BIRDS OF A FEATHER - Billie Eilish</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="track-cover-container">
+                        <img src="img/cover/billieeilish_cover.jpg" alt="Обложка трека" class="track-cover">
+                    </div>
+                    <div class="plyr-player">
+                        <audio controls>
+                            <source src="songs/BIRDS OF A FEATHER.mp3" type="audio/mpeg">
+                            Ваш браузер не поддерживает аудиоэлемент.
+                        </audio>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Секция 2: Post Malone -->
+    <section class="artist-section green" data-aos="fade-up">
+        <div class="artist-info" data-aos="fade-left" data-aos-duration="1500">
+            <h2>Post Malone</h2>
+            <p>Post Malone — американский рэпер, певец и автор песен, известный своим уникальным стилем, который сочетает элементы рэпа, поп-музыки и кантри. Родился в 1995 году в Нью-Йорке, Post Malone начал свою карьеру в 2015 году, выпустив сингл "White Iverson", который быстро стал вирусным.</p>
+            <p>Post Malone стал знаменитым благодаря таким трекам, как "Rockstar", "Sunflower" и "Circles". Его музыка часто затрагивает темы любви, успеха и внутренних переживаний, что делает её близкой для многих слушателей. Post Malone выпустил несколько успешных альбомов, включая "Stoney" (2016), "Beerbongs & Bentleys" (2018) и "Hollywood's Bleeding" (2019), которые получили признание критиков и поклонников.</p>
+            <!-- Кнопка для открытия модального окна -->
+            <button type="button" class="btn btn-primary btn123" data-bs-toggle="modal" data-bs-target="#macMillerModal">
+                Открыть плеер
+            </button>
+        </div>
+    </section>
+
+    <!-- Модальное окно для Post Malone -->
+    <div class="modal fade" id="macMillerModal" tabindex="-1" aria-labelledby="macMillerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="macMillerModalLabel">Sunflower - Post Malone</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="track-cover-container">
+                        <img src="img/cover/postmalone_cover.jpg" alt="Обложка трека" class="track-cover">
+                    </div>
+                    <div class="plyr-player">
+                        <audio controls>
+                            <source src="songs/Sunflower.mp3" type="audio/mpeg">
+                            Ваш браузер не поддерживает аудиоэлемент.
+                        </audio>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Секция 3: glaive -->
+    <section class="artist-section blue" data-aos="fade-up">
+        <div class="artist-info" data-aos="fade-right" data-aos-duration="1500">
+            <h2>glaive</h2>
+            <p>Glaive — молодой американский певец и автор песен, ставший одним из самых ярких представителей жанра гиперпоп. Родился в 2004 году в Северной Каролине, Glaive начал свою карьеру в 2020 году, выпуская музыку на SoundCloud. Его уникальный стиль, сочетающий элементы поп-музыки, электроники и эмо, быстро привлёк внимание слушателей.</p>
+            <p>Glaive стал известен благодаря таким трекам, как "Astrid", "Cloak N Dagger" и "1984". Его музыка часто затрагивает темы подростковых переживаний, любви и самоидентификации, что делает её близкой для молодой аудитории. Glaive продолжает активно развиваться и экспериментировать с новыми звучаниями, что делает его одним из самых перспективных артистов в современной музыке.</p>
+            <!-- Кнопка для открытия модального окна -->
+            <button type="button" class="btn btn-primary btn123" data-bs-toggle="modal" data-bs-target="#droKenjiModal">
+                Открыть плеер
+            </button>
+        </div>
+    </section>
+
+    <!-- Модальное окно для glaive -->
+    <div class="modal fade" id="droKenjiModal" tabindex="-1" aria-labelledby="droKenjiModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="droKenjiModalLabel">heather - glaive</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="track-cover-container">
+                        <img src="img/cover/glaive_cover.jpg" alt="Обложка трека" class="track-cover">
+                    </div>
+                    <div class="plyr-player">
+                        <audio controls>
+                            <source src="songs/heather.mp3" type="audio/mpeg">
+                            Ваш браузер не поддерживает аудиоэлемент.
+                        </audio>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Мой музыкальный сайт</p>
+        <div class="social-icons">
+            <a href="https://github.com/kairenq" target="_blank"><img src="img/icons/github.png" alt="GitHub"></a>
+            <a href="https://t.me/kairenqq" target="_blank"><img src="img/icons/telegram.png" alt="Telegram"></a>
+            <a href="https://vk.com/kairenq" target="_blank"><img src="img/icons/vk.png" alt="VK"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script>
+        const players = Plyr.setup('audio');
+    </script>
+</body>
+</html>
