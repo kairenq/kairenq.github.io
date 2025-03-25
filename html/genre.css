@@ -1,0 +1,176 @@
+body {
+    background: linear-gradient(135deg, #0A0A0A, #161616);
+    background-size: 400% 400%;
+    animation: gradientShift 10s infinite linear;
+    margin-top: 80px;
+    color: #C0C0C0;
+    font-family: 'Raleway', sans-serif;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.navbar {
+    background-color: rgba(5, 5, 5, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+}
+.navbar-brand, .nav-link {
+    color: #D0D0D0;
+    transition: color 0.3s ease-in-out;
+}
+.navbar-brand img {
+    width: 10%;
+}
+.navbar-brand:hover, .nav-link:hover {
+    color: #FFFFFF;
+}
+.footer {
+    background-color: rgba(5, 5, 5, 0.95);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+}
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+.social-icons a img:hover {
+    opacity: 1;
+}
+.artist-section {
+    width: 100%;
+    background-size: 400% 400%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.artist-info {
+    max-width: 30%;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Стили для модальных окон */
+.modal-content {
+    background: rgba(0, 0, 0, 0.9);
+    color: #C0C0C0;
+    border-radius: 15px;
+    border: 1px solid #333;
+}
+.modal-header {
+    border-bottom: 1px solid #333;
+}
+.modal-footer {
+    border-top: 1px solid #333;
+}
+.plyr-player {
+    max-width: 100%;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+.track-cover {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.track-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.btn123 {
+    background-color: crimson;
+    border-color: crimson;
+}
+.btn123:hover {
+    background-color: rgb(238, 21, 65);
+    border-color: rgb(238, 21, 65);
+}
+
+        /* Кастомизация Plyr */
+.plyr--audio .plyr__controls {
+    background: rgba(0, 0, 0, 0.8); /* Фон плеера */
+    border-radius: 15px; /* Закругление углов */
+    padding: 10px; /* Отступы внутри плеера */
+}
+
+/* Цвет кнопок */
+.plyr--audio .plyr__controls button {
+    color: #ff6b6b; /* Цвет иконок (например, кнопка play/pause) */
+}
+
+/* Цвет кнопок при наведении */
+.plyr--audio .plyr__controls button:hover {
+    color: #ff3b3b; /* Цвет иконок при наведении */
+}
+
+/* Цвет прогресс-бара */
+.plyr--audio .plyr__progress__buffer {
+    background: rgba(255, 255, 255, 0.2); /* Цвет фона прогресс-бара */
+}
+
+.plyr--audio .plyr__progress__played {
+    background: #ff6b6b; /* Цвет заполненной части прогресс-бара */
+}
+
+/* Цвет ползунка громкости */
+.plyr--audio .plyr__volume {
+    background: rgba(0, 0, 0, 0.8); /* Фон ползунка громкости */
+}
+
+.plyr--audio .plyr__volume__display {
+    background: #ff6b6b; /* Цвет заполненной части ползунка громкости */
+}
+
+@media (max-width: 768px) {
+    .artist-info {
+      max-width: 90% !important;
+      padding: 15px !important;
+      margin: 0 auto 20px !important;
+    }
+  
+    .artist-section {
+      flex-direction: column;
+      padding: 30px 0 !important;
+      background-position: center !important;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+  
+    .btn-primary {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 25px;
+      background: linear-gradient(90deg, #ff6b6b, #ff3b3b);
+      border: none;
+      box-shadow: 0 4px 8px rgba(255, 107, 107, 0.3);
+    }
+  }
