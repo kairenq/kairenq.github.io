@@ -219,3 +219,19 @@ font-family: Arial, sans-serif;
 .close-btn:hover {
     color: crimson;
 }
+.map-container {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .map-container {
+        margin-top: 20px;
+    }
+    .footer .row {
+        flex-direction: column-reverse;
+    }
+}
